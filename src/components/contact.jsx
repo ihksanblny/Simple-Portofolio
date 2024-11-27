@@ -34,7 +34,7 @@ export default function Contact() {
               </a>
             </li>
             <li>
-              <strong className="font-medium text-blue-900">Profession:</strong> Frontend Developer
+              <strong className="font-medium text-black-900">Profession:</strong> Frontend Developer
             </li>
           </ul>
         </div>
