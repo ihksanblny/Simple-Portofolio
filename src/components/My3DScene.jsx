@@ -4,33 +4,6 @@ import { Canvas, useFrame } from '@react-three/fiber'; // useFrame juga tidak di
 import { Stars, Cloud, Clouds, Sparkles } from '@react-three/drei';
 import * as THREE from 'three';
 
-// Komponen FloatingGlowSphere bisa Anda hapus seluruhnya jika tidak ingin digunakan lagi
-/*
-function FloatingGlowSphere() {
-  const ref = useRef();
-
-  useFrame((_, delta) => {
-    if (ref.current) {
-      ref.current.rotation.y += delta * 0.05;
-      ref.current.position.y = Math.sin(Date.now() * 0.001) * 0.2;
-    }
-  });
-
-  return (
-    <mesh ref={ref}>
-      <sphereGeometry args={[0.8, 64, 64]} />
-      <meshStandardMaterial
-        color="#00fff0"
-        emissive="#00e0d0"
-        emissiveIntensity={1.2}
-        metalness={0.6}
-        roughness={0.2}
-      />
-    </mesh>
-  );
-}
-*/
-
 export default function My3DScene() {
   return (
     <div style={{ width: '100%', height: '100%' }}>
