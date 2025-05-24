@@ -22,9 +22,7 @@ export default function About() {
     <SectionWrapper id="about" title="About Me">
       <div className="text-center max-w-3xl mx-auto">
         <p className="text-text-muted text-lg leading-relaxed">
-          Hello! I'm Ihksan, a passionate frontend developer with a keen eye for design and a love for creating intuitive, dynamic user experiences. My journey into web development started with a simple curiosity for how things work on the internet, which has since grown into a full-fledged passion.
-          <br /><br />
-          I specialize in React and its ecosystem, and I'm always eager to learn new technologies to build better and faster applications. When I'm not coding, you can find me exploring new coffee shops or diving into a good book.
+          Hello, I'm Ihksan. The world of web development has always captivated me, starting from a simple question, 'how does all this work?' to what has now become an unquenchable passion. I find great satisfaction in creating intuitive and dynamic user experiences, especially with React on the frontend. However, behind the scenes, I'm also a backend enthusiast. I'm currently diving deep into Flask and have become quite comfortable building APIs with Express.js. Laravel has also been a companion in several projects. Beyond that, I've ventured into the cloud, becoming familiar with Firebase and even directly interacting with the Google Cloud Console for a project. For me, every line of code is an opportunity to learn and innovate, whether I'm sipping coffee at my favorite cafe or lost in the pages of a good book.
         </p>
       </div>
     </SectionWrapper>

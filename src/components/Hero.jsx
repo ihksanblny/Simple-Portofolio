@@ -22,7 +22,7 @@ export default function Hero() {
           <h2 className="text-2xl md:text-3xl text-text-light mb-6">
             <TypeAnimation
               sequence={[
-                'A Frontend Developer',
+                'A Frontend Developer & Backend Developer',
                 2000,
                 'A React Enthusiast',
                 2000,

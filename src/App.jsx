@@ -12,28 +12,25 @@ import Footer from './components/footer';
 // Ganti data di bawah ini dengan informasi proyek Anda
 const portfolioProjects = [
   {
-    title: "Modern Portfolio Website",
-    description: "A sleek, dark-mode personal portfolio built with React, Tailwind CSS, and Framer Motion.",
-    image: "/ihksan.jpeg", // Ganti dengan path gambar Anda. Contoh: /images/project-1.png
-    tags: ['React', 'Tailwind CSS', 'Framer Motion'],
-    repoUrl: "https://github.com/ihksanblny/Simple-Portofolio", // Ganti dengan URL repo Anda
+    title: "SkillMatch Landing Page",
+    description: "A landing page for SkillMatch, a platform connecting learners with mentors and professionals.",
+    image: "/skillmatch1.png", // Ganti dengan path gambar Anda. Contoh: /images/project-1.png
+    tags: ['React', 'Tailwind CSS', 'Vite'],
+    repoUrl: "https://github.com/ihksanblny/SkillMatch-New", // Ganti dengan URL repo Anda
     liveUrl: "#", // Ganti dengan URL demo live jika ada
   },
   {
-    title: "Project Example 2",
-    description: "Description for your second project. Explain the technology and your role.",
-    image: "/ihksan.jpeg", // Ganti dengan path gambar Anda
-    tags: ['React', 'Node.js', 'Express.js'],
-    repoUrl: "#",
+    title: "Deploy ML Model with Flask",
+    description: "A project deploying a machine learning model using Flask.",
+    image: "/gcp.png", // Ganti dengan path gambar Anda
+    tags: ['Google Cloud Console', 'Flask', 'Docker'],
+    repoUrl: "https://github.com/ihksanblny/Deploy-Model",
     liveUrl: "#",
   },
 ];
 
 function App() {
   return (
-    // PERHATIKAN: Div utama ini sekarang sudah benar.
-    // Tidak ada kelas 'bg-gray-50', sehingga latar belakang gelap dari index.css
-    // bisa ditampilkan dengan benar.
     <div>
       <Header />
       <main>
