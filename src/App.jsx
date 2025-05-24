@@ -1,38 +1,48 @@
 // src/App.jsx
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import PortfolioCard from "./components/PortofolioCard";
-import Contact from "./components/contact";
-import Footer from "./components/footer";
+
+// Impor komponen-komponen yang telah kita desain ulang untuk tema gelap
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Skills from './components/skills';
+import Contact from './components/contact';
+import Footer from './components/Footer';
+
+// Ganti data di bawah ini dengan informasi proyek Anda
+const portfolioProjects = [
+  {
+    title: "Modern Portfolio Website",
+    description: "A sleek, dark-mode personal portfolio built with React, Tailwind CSS, and Framer Motion.",
+    image: "/ihksan.jpeg", // Ganti dengan path gambar Anda. Contoh: /images/project-1.png
+    tags: ['React', 'Tailwind CSS', 'Framer Motion'],
+    repoUrl: "https://github.com/ihksanblny/Simple-Portofolio", // Ganti dengan URL repo Anda
+    liveUrl: "#", // Ganti dengan URL demo live jika ada
+  },
+  {
+    title: "Project Example 2",
+    description: "Description for your second project. Explain the technology and your role.",
+    image: "/ihksan.jpeg", // Ganti dengan path gambar Anda
+    tags: ['React', 'Node.js', 'Express.js'],
+    repoUrl: "#",
+    liveUrl: "#",
+  },
+];
 
 function App() {
   return (
-    <div className="font-inter">
+    // PERHATIKAN: Div utama ini sekarang sudah benar.
+    // Tidak ada kelas 'bg-gray-50', sehingga latar belakang gelap dari index.css
+    // bisa ditampilkan dengan benar.
+    <div>
       <Header />
-      <Hero />
-      <div id="portfolio" className="container mx-auto py-20">
-        <h2 className="text-3xl font-semibold text-center text-gray-800 mb-10">My Projects</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-          <PortfolioCard
-            title="Project 1"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            image="https://via.placeholder.com/400x300"
-          />
-          <PortfolioCard
-            title="Project 2"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            image="https://via.placeholder.com/400x300"
-          />
-          <PortfolioCard
-            title="Project 3"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            image="https://via.placeholder.com/400x300"
-          />
-        </div>
-      </div>
-      <section id="contact" className="py-16 bg-gray-50">
+      <main>
+        <Hero />
+        <About />
+        <Projects projects={portfolioProjects} />
+        <Skills />
         <Contact />
-      </section>
+      </main>
       <Footer />
     </div>
   );

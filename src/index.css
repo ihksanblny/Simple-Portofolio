@@ -1,13 +1,38 @@
-/* src/index.css */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-body {
-  font-family: 'Poppins', sans-serif; /* Gunakan font Inter */
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* Perintah dasar Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Lapisan 'base' ini adalah KUNCINYA.
+  Ini menerapkan gaya ke elemen dasar seperti 'body'.
+*/
+@layer base {
+  body {
+    /* Menerapkan warna background gelap dan warna teks terang ke seluruh halaman */
+    @apply bg-dark-bg text-text-light font-sans antialiased;
+  }
 
+  html {
+    @apply scroll-smooth;
+  }
+}
 
+/* Custom Scrollbar (Bonus) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2c2c2c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ffcc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00b38f;
+}
