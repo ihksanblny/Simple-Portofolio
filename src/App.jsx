@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Skills from './components/skills';
 import Contact from './components/contact';
 import Footer from './components/footer';
+import My3DScene from './components/My3DScene'; // Pastikan path ini benar
 
 // Ganti data di bawah ini dengan informasi proyek Anda
 const portfolioProjects = [
@@ -29,20 +30,27 @@ const portfolioProjects = [
   },
 ];
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Projects projects={portfolioProjects} />
-        <Skills />
-        <Contact />
-      </main>
-      <Footer />
+    <div className="relative"> {/* Tambahkan relative di sini */}
+      {/* 3D Scene sebagai background global */}
+      <div className="fixed top-0 left-0 w-full h-full z-[-1]"> {/* z-[-1] agar di belakang semua */}
+        <My3DScene />
+      </div>
+
+      {/* Konten utama aplikasi */}
+      <div className="relative z-[1]"> {/* Konten harus punya z-index lebih tinggi */}
+        <Header />
+        <main>
+          <Hero />
+          <About />
+          <Projects projects={portfolioProjects} />
+          <Skills />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
 
-export default App;

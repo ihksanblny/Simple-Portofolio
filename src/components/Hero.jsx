@@ -1,20 +1,29 @@
+// src/components/Hero.jsx
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
+// My3DScene TIDAK diimpor di sini lagi
 
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center text-center">
-      <div className="container mx-auto px-6">
+    <section
+      id="hero"
+      // Background section ini akan transparan, membiarkan 3D global dari App.jsx terlihat.
+      // 'relative' penting agar konten di dalamnya bisa diposisikan dengan z-index jika diperlukan.
+      className="min-h-screen flex items-center justify-center text-center relative"
+    >
+      {/* Tidak ada lagi div untuk My3DScene atau gradient overlay karena background 3D sudah global */}
+
+      <div className="container mx-auto px-6 relative"> {/* Konten utama Hero */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           <img
-            src="/ihksan.jpg"
+            src="/ihksan.jpg" // Pastikan gambar ini ada di folder public
             alt="Ihksan"
-            className="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-primary shadow-glow"
+            className="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-primary shadow-glow object-cover"
           />
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-3">
             Hi, I'm Ihksan
