@@ -7,7 +7,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/skills';
 import Contact from './components/contact';
-import Footer from './components/Footer';
+import Footer from './components/footer';
 
 // Ganti data di bawah ini dengan informasi proyek Anda
 const portfolioProjects = [
