@@ -1,7 +1,7 @@
 // src/App.jsx
 
 // Impor komponen-komponen yang telah kita desain ulang untuk tema gelap
-import Header from './components/Header';
+import Header from './components/header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
