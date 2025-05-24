@@ -12,7 +12,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <img
-            src="/ihksan.jpg" // GANTI DENGAN FOTO ANDA
+            src="/ihksan.jpg"
             alt="Ihksan"
             className="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-primary shadow-glow"
           />
@@ -40,7 +40,7 @@ export default function Hero() {
           </p>
           <div className="flex justify-center space-x-6 mb-8">
             <a href="https://github.com/ihksanblny" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-primary text-3xl transition-colors"><FaGithub /></a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-primary text-3xl transition-colors"><FaLinkedin /></a>
+            <a href="https://www.linkedin.com/in/ihksanblny" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-primary text-3xl transition-colors"><FaLinkedin /></a>
             <a href="mailto:ihksan.mail@gmail.com" className="text-text-muted hover:text-primary text-3xl transition-colors"><FaEnvelope /></a>
           </div>
           <a
