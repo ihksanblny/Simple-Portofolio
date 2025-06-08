@@ -28,6 +28,14 @@ const portfolioProjects = [
     repoUrl: "https://github.com/ihksanblny/Deploy-Model",
     liveUrl: "#",
   },
+  {
+    title: "Dog And Cat Classifier with FastAPI and React",
+    description: "A web application that classifies images of dogs and cats using FastAPI and React.",
+    image: "/web3.png",
+    tags: ['FastAPI', 'React', 'Jupyter Notebook'],
+    repoUrl: "https://github.com/ihksanblny/DogAndCat",
+    liveUrl: "https://dog-and-cat-lilac.vercel.app/",
+  }
 ];
 
 export default function App() {
